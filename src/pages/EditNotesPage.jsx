@@ -1,13 +1,14 @@
-import { useContext, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useParams, useLoaderData, useNavigate } from "react-router-dom";
+import { useState, useContext } from "react";
 import { NotesContext } from "../contexts/NoteContext";
-const AddNotesPage = () => {
-  const { addNote } = useContext(NotesContext);
+const EditNotesPage = () => {
+  const note = useLoaderData();
   const navigate = useNavigate();
-  const [title, setTitle] = useState("");
-  const [description, setDescription] = useState("");
-  const [category, setCategory] = useState("");
-
+  const { id } = useParams();
+  const [title, setTitle] = useState(note.title);
+  const [description, setDescription] = useState(note.description);
+  const [category, setCategory] = useState(note.category);
+  const { updateNote } = useContext(NotesContext);
   const getCurrentDate = () => {
     const date = new Date();
     const year = date.getFullYear();
@@ -21,17 +22,17 @@ const AddNotesPage = () => {
   const submitForm = (e) => {
     e.preventDefault();
     const titleFirstLetter = capitalizeFirstLetter(title);
-    const newNote = {
+    const updatedNote = {
+      id,
       title: titleFirstLetter,
       description,
       category,
       date: getCurrentDate(),
     };
-    addNote(newNote);
-    alert("Created Note Successfully");
-    return navigate("/");
+    updateNote(updatedNote);
+    alert("Updated Note Successfully");
+    return navigate(`/notes/${id}`);
   };
-
   return (
     <div className="bg-red-50 min-h-screen">
       <div className="container m-auto max-w-2xl py-24">
@@ -132,4 +133,4 @@ const AddNotesPage = () => {
   );
 };
 
-export default AddNotesPage;
+export default EditNotesPage;
