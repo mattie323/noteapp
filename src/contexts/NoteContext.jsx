@@ -8,7 +8,7 @@ export const NotesProvider = ({ children }) => {
   // Function to add a new note
   const addNote = async (newNote) => {
     try {
-      const res = await fetch("/api/notes", {
+      const res = await fetch("https://noteapp-json-server-vercel.vercel.app/notes", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -26,22 +26,10 @@ export const NotesProvider = ({ children }) => {
       console.log("Error adding note", error);
     }
   };
-  //   const addNote = async (newNote) => {
-  //     const res = await fetch("/api/notes", {
-  //       method: "POST",
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //       },
-  //       body: JSON.stringify(newNote),
-  //     })
-  //       .then((response) => response.json())
-  //       .then((newNote) => setNotes([...notes, newNote]))
-  //       .catch((error) => console.error("Error adding jobs:", error));
-  //   };
   //Function to delete a note
   const deleteNote = async (id) => {
     try {
-      const res = await fetch(`/api/notes/${id}`, {
+      const res = await fetch(`https://noteapp-json-server-vercel.vercel.app/notes/${id}`, {
         method: "DELETE",
       });
 
@@ -56,7 +44,7 @@ export const NotesProvider = ({ children }) => {
   };
   const updateNote = async (note) => {
     try {
-      const res = await fetch(`/api/notes/${note.id}`, {
+      const res = await fetch(`https://noteapp-json-server-vercel.vercel.app/notes/${note.id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",

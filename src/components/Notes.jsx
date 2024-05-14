@@ -7,7 +7,7 @@ const Notes = ({ isHomePage = false }) => {
   const [notes, setNotes] = useState([]);
   useEffect(() => {
     const fetchNotes = async () => {
-      const apiUrl = isHomePage ? "/api/notes?_limit=3" : "/api/notes";
+      const apiUrl = isHomePage ? "https://noteapp-json-server-vercel.vercel.app/notes?_limit=3" : "https://noteapp-json-server-vercel.vercel.app/notes";
       try {
         const res = await fetch(apiUrl);
         const data = await res.json();
