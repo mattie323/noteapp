@@ -1,9 +1,30 @@
 {
   "notes": [
     {
-      "id": "54d1",
-      "title": "Ewq",
-      "description": "qwe",
+      "id": "c5e2",
+      "title": "Sample note 1",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget leo vehicula, auctor mi sed, eleifend quam. Suspendisse potenti. Cras posuere consectetur congue. Mauris auctor lacus quis feugiat bibendum. Maecenas vehicula volutpat quam, vel dapibus mi tristique quis. Pellentesque at metus venenatis, ultricies sapien et, condimentum dui. Curabitur efficitur metus ac ipsum sagittis consectetur. Vivamus tincidunt lectus massa, vel blandit ipsum suscipit nec. Sed rhoncus, leo euismod pretium dignissim, dui mi consequat urna, ac hendrerit metus metus ac est. Aliquam augue mauris, sollicitudin nec leo in, laoreet commodo erat. Phasellus velit sapien, pulvinar id suscipit non, mollis ac quam. Duis.",
+      "category": "personal",
+      "date": "05/14/2024"
+    },
+    {
+      "id": "f3bf",
+      "title": "Sample note 2",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget leo vehicula, auctor mi sed, eleifend quam. Suspendisse potenti. Cras posuere consectetur congue. Mauris auctor lacus quis feugiat bibendum. Maecenas vehicula volutpat quam, vel dapibus mi tristique quis. Pellentesque at metus venenatis, ultricies sapien et, condimentum dui. Curabitur efficitur metus ac ipsum sagittis consectetur. Vivamus tincidunt lectus massa, vel blandit ipsum suscipit nec. Sed rhoncus, leo euismod pretium dignissim, dui mi consequat urna, ac hendrerit metus metus ac est. Aliquam augue mauris, sollicitudin nec leo in, laoreet commodo erat. Phasellus velit sapien, pulvinar id suscipit non, mollis ac quam. Duis.",
+      "category": "home",
+      "date": "05/14/2024"
+    },
+    {
+      "id": "914a",
+      "title": "Sample note 3",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget leo vehicula, auctor mi sed, eleifend quam. Suspendisse potenti. Cras posuere consectetur congue. Mauris auctor lacus quis feugiat bibendum. Maecenas vehicula volutpat quam, vel dapibus mi tristique quis. Pellentesque at metus venenatis, ultricies sapien et, condimentum dui. Curabitur efficitur metus ac ipsum sagittis consectetur. Vivamus tincidunt lectus massa, vel blandit ipsum suscipit nec. Sed rhoncus, leo euismod pretium dignissim, dui mi consequat urna, ac hendrerit metus metus ac est. Aliquam augue mauris, sollicitudin nec leo in, laoreet commodo erat. Phasellus velit sapien, pulvinar id suscipit non, mollis ac quam. Duis.",
+      "category": "business",
+      "date": "05/14/2024"
+    },
+    {
+      "id": "47c1",
+      "title": "Sample note 4",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget leo vehicula, auctor mi sed, eleifend quam. Suspendisse potenti. Cras posuere consectetur congue. Mauris auctor lacus quis feugiat bibendum. Maecenas vehicula volutpat quam, vel dapibus mi tristique quis. Pellentesque at metus venenatis, ultricies sapien et, condimentum dui. Curabitur efficitur metus ac ipsum sagittis consectetur. Vivamus tincidunt lectus massa, vel blandit ipsum suscipit nec. Sed rhoncus, leo euismod pretium dignissim, dui mi consequat urna, ac hendrerit metus metus ac est. Aliquam augue mauris, sollicitudin nec leo in, laoreet commodo erat. Phasellus velit sapien, pulvinar id suscipit non, mollis ac quam. Duis.",
       "category": "personal",
       "date": "05/14/2024"
     }
