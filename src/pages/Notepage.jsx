@@ -69,7 +69,7 @@ const Notepage = () => {
 };
 
 const noteLoader = async ({ params }) => {
-  const res = await fetch(`/api/notes/${params.id}`);
+  const res = await fetch(`https://noteapp-json-server-vercel.vercel.app/notes/${params.id}`);
   const data = await res.json();
   return data;
 };
