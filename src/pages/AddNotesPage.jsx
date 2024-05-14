@@ -29,7 +29,7 @@ const AddNotesPage = () => {
     };
     addNote(newNote);
     alert("Created Note Successfully");
-    return navigate("/");
+    return navigate("/notes");
   };
 
   return (
