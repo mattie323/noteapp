@@ -1,5 +1,5 @@
 import { useParams, useLoaderData, useNavigate } from "react-router-dom";
-import { useState, useContext } from "react";
+import { useState, useContext, useEffect } from "react";
 import { NotesContext } from "../contexts/NoteContext";
 const EditNotesPage = () => {
   const note = useLoaderData();
@@ -19,6 +19,9 @@ const EditNotesPage = () => {
   const capitalizeFirstLetter = (str) => {
     return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
   };
+  useEffect(() => {
+    setCategory(note.category);
+  }, [note.category]);
   const submitForm = (e) => {
     e.preventDefault();
     const titleFirstLetter = capitalizeFirstLetter(title);
@@ -39,7 +42,7 @@ const EditNotesPage = () => {
         <div className="bg-white px-6 py-8 mb-4 shadow-md rounded-xl border m-4 md:m-0">
           <form onSubmit={submitForm}>
             <h2 className="text-3xl text-start font-semibold mb-6">
-              New Note:
+              Update Note:
             </h2>
 
             <div className="mb-4">
@@ -87,6 +90,7 @@ const EditNotesPage = () => {
                     name="category"
                     required
                     value="personal"
+                    checked={category === "personal"}
                     onChange={(e) => setCategory(e.target.value)}
                   />
                   Personal
@@ -99,6 +103,7 @@ const EditNotesPage = () => {
                     name="category"
                     required
                     value="home"
+                    checked={category === "home"}
                     onChange={(e) => setCategory(e.target.value)}
                   />
                   Home
@@ -111,6 +116,7 @@ const EditNotesPage = () => {
                     name="category"
                     required
                     value="business"
+                    checked={category === "business"}
                     onChange={(e) => setCategory(e.target.value)}
                   />
                   Business
@@ -123,7 +129,7 @@ const EditNotesPage = () => {
                 className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-5 rounded-full  focus:outline-none focus:shadow-outline"
                 type="submit"
               >
-                Save Note
+                Update Note
               </button>
             </div>
           </form>
