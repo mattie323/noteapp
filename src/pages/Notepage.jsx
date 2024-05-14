@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { useParams, useLoaderData, useNavigate, Link } from "react-router-dom";
+import { useParams, useLoaderData, useNavigate, NavLink, Link} from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
 import { NotesContext } from "../contexts/NoteContext";
 
