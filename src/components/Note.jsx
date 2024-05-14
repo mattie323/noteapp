@@ -15,7 +15,7 @@ const Note = ({ notes }) => {
 
         <div className="flex flex-col lg:flex-row justify-end mb-4">
           <Link
-            to={`/notes/${notes.id}`}
+            to={`https://noteapp-json-server-vercel.vercel.app/notes/${notes.id}`}
             className="h-[36px] bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg text-center text-sm"
           >
             Read More
